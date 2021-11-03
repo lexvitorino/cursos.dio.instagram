@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.insta-preview {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+    height: 100vh;
+}
+
+.insta-preview img {
+    height: 100%;
+}
+
+.insta-account {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    height: 90%;
+}
+
+.insta-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFF;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px 0;
+    width: 350px;
+}
+
+.insta-my-account {
+    height: 330px;
+    margin-bottom: 10px;
+}
+
+.insta-my-account--img img {
+    height: 40px;
+}
+
+.insta-my-account--avatar img {
+    border-radius: 100px;
+    height: 120px;
+}
+
+.insta-my-account--continue>a {
+    background-color: rgb(0, 149, 246);
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.insta-my-account--logout>a {
+    color: rgba(var(--d69,0,149,246),1);
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.insta-change-acount>p:nth-child(1) {
+    color: #ddd;
+}
+
+.insta-change-acount>p:nth-child(2)>a {
+    color: rgba(var(--d69,0,149,246),1);
+}
+
+.insta-apps {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    width: 350px;
+}
+
+.insta-apps>p {
+    color: rgba(var(--i1d,38,38,38),1);
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 10px;
+}
+
+.insta-buttons-apps {
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    width: 100%;
+}
+
+.insta-button-app {
+    height: 40px;
+    width: 50%;
+    background-size: cover;
+    text-align: center;
+}
+
+.insta-button-app img {
+    height: 100%;
+}
+
+/* medias queries */
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .insta-preview {
+        display: none;
+    }
+
+    .insta-account {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .insta-box {
+        border: 1px solid transparent;
+    }
+}
